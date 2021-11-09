@@ -8,10 +8,9 @@ package it.unibo.oop.jar.packages.pkg2;
  * 
  */
 public final class EvenMoreDummy extends MoreDummy {
-
-    @Override
-    public String toString() {
-        return "EvenMore";
-    }
-
+	
+	@Override
+	public String toString() {
+		return "EvenMore";
+	}
 }

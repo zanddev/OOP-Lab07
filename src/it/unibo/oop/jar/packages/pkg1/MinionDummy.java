@@ -8,10 +8,9 @@ package it.unibo.oop.jar.packages.pkg1;
  * 
  */
 public final class MinionDummy extends DummyClass {
-
-    @Override
-    public String toString() {
-        return "MinionDummy";
-    }
-
+	
+	@Override
+	public String toString() {
+		return "MinionDummy";
+	}
 }

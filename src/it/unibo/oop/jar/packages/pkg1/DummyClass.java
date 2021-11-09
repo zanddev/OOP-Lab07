@@ -8,13 +8,12 @@ package it.unibo.oop.jar.packages.pkg1;
  * 
  */
 public class DummyClass {
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public String toString() {
-        return "Dummy";
-    }
-
+	
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public String toString() {
+		return "Dummy";
+	}
 }
