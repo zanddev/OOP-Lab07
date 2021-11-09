@@ -8,7 +8,7 @@ import it.unibo.oop.lab.socialnetwork.SocialNetworkUserImpl;
 import it.unibo.oop.lab.socialnetwork.User;
 
 /**
- * Instruction: define two comparators as anonymous classes in oder to sort a
+ * Instruction: define two comparators as anonymous classes in order to sort a
  * list of user in the appropriate way.
  * 
  * 1) Study carefully the test in order to understand it
