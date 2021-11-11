@@ -31,37 +31,37 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
      * add a field to keep track of the set of sports followed/done by a user
      */
 
-    /**
-     * Builds a new {@link SportSocialNetworkUserImpl}.
-     * 
-     * @param name
-     *            the user firstname
-     * @param surname
-     *            the user lastname
-     * @param user
-     *            alias of the user, i.e. the way a user is identified on an
-     *            application
-     */
-    public SportSocialNetworkUserImpl(final String name, final String surname, final String user) {
-        this(name, surname, user, -1);
-    }
+	/**
+	 * Builds a new {@link SportSocialNetworkUserImpl}.
+	 * 
+	 * @param name
+	 *            the user firstname
+	 * @param surname
+	 *            the user lastname
+	 * @param user
+	 *            alias of the user, i.e. the way a user is identified on an
+	 *            application
+	 */
+	public SportSocialNetworkUserImpl(final String name, final String surname, final String user) {
+		this(name, surname, user, -1);
+	}
 
-    /**
-     * Builds a new {@link SportSocialNetworkUserImpl}.
-     * 
-     * @param name
-     *            the user firstname
-     * @param surname
-     *            the user lastname
-     * @param userAge
-     *            user's age
-     * @param user
-     *            alias of the user, i.e. the way a user is identified on an
-     *            application
-     */
-    public SportSocialNetworkUserImpl(final String name, final String surname, final String user, final int userAge) {
-        super(name, surname, user, userAge);
-    }
+	/**
+	 * Builds a new {@link SportSocialNetworkUserImpl}.
+	 * 
+	 * @param name
+	 *            the user firstname
+	 * @param surname
+	 *            the user lastname
+	 * @param userAge
+	 *            user's age
+	 * @param user
+	 *            alias of the user, i.e. the way a user is identified on an
+	 *            application
+	 */
+	public SportSocialNetworkUserImpl(final String name, final String surname, final String user, final int userAge) {
+		super(name, surname, user, userAge);
+	}
 
     /*
      * [METHODS]
@@ -69,27 +69,27 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
      * Redefine the methods below reusing the same code of previous exercise
      */
 
-    /**
-     * Add a new sport followed by this user: if the user already likes or does
-     * the sport, nothing happens.
-     * 
-     * @param sport
-     *            a sport followed/done by the user
-     */
+	/**
+	 * Add a new sport followed by this user: if the user already likes or does
+	 * the sport, nothing happens.
+	 * 
+	 * @param sport
+	 *            a sport followed/done by the user
+	 */
     // TODO
-    public void addSport(final Sport sport) {
+	public void addSport(final Sport sport) {
 
-    }
+	}
 
-    /**
-     * Returns true if a user likes/does a given sport.
-     * 
-     * @param s
-     *            sport to use as an input
-     * 
-     * @return true if the user likes sport s
-     */
-    public boolean hasSport(final Sport s) {
-        return false;
-    }
+	/**
+	 * Returns true if a user likes/does a given sport.
+	 * 
+	 * @param s
+	 *            sport to use as an input
+	 * 
+	 * @return true if the user likes sport s
+	 */
+	public boolean hasSport(final Sport s) {
+		return false;
+	}
 }

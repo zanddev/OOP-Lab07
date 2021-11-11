@@ -12,18 +12,18 @@ package it.unibo.oop.lab.enum1;
  */
 public final class TestSportByEnumeration {
 
-    private TestSportByEnumeration() { }
+	private TestSportByEnumeration() { }
 
-    /**
-     * @param args
-     *            ignored
-     */
-    public static void main(final String... args) {
-        /*
-         * [TEST DEFINITION]
-         * 
-         * By now, you know how to do it
-         */
-        // TODO
-    }
+	/**
+	 * @param args
+	 *            ignored
+	 */
+	public static void main(final String... args) {
+	    /*
+	     * [TEST DEFINITION]
+	     * 
+	     * By now, you know how to do it
+	     */
+	    // TODO
+	}
 }
