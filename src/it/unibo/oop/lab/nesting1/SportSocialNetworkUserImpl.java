@@ -14,9 +14,6 @@ import it.unibo.oop.lab.socialnetwork.User;
  * Represents a social network user along with the sports he/she likes to do or
  * to follow.
  * 
- * 1) Complete the definition of the nested static class Sport, featuring just a
- * field representing the sport name.
- * 
  * @param <U>
  *            specific {@link User} type
  */
@@ -47,9 +44,9 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
 	 */
 	public static final Sport BIKE;
 
-    /*
-     * Initialize properly these sports
-     */
+	/*
+	 * Initialize properly these sports
+	 */
 	static {
 		SOCCER = new Sport("SOCCER");
 		F1 = new Sport("F1");
@@ -119,22 +116,32 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
 		return sports.contains(s);
 	}
 
-    /*
-     * TODO
-     * 
-     * Complete the definition of this static inner class defining a Sport along
-     * with its bare name.
-     */
+	/* Defines a nested static class Sport, featuring just a field representing
+	 * the sport name along with the inner class bare name
+	 */
 	public static final class Sport {
-	    /*
-	     * TODO
-	     * 
-	     * Redefine equals so that two sports are equal only if they feature the
-	     * very same name. Remember that you must also redefine hashCode()!
-	     */
+	
+		private final String sport;
+	
+		public Sport(String sport) {
+			this.sport = sport;
+		}
+	
+		/*
+		 * Redefines equals so that two sports are equal only if they feature the
+		 * very same name. Remember that you must also redefine hashCode()!
+		 */
 		@Override
 		public boolean equals(final Object o) {
-			return false;
+			return sport.toString().equals(o.toString());
+		}
+	
+		/*
+		 * Redefines hashCode() for the same reason of equals()
+		 */
+		@Override
+		public int hashCode() {
+			return Objects.hashCode(sport);
 		}
 	}
 }
