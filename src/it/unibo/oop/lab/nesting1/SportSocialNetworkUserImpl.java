@@ -17,8 +17,6 @@ import it.unibo.oop.lab.socialnetwork.User;
  * 1) Complete the definition of the nested static class Sport, featuring just a
  * field representing the sport name.
  * 
- * 2) Add the unimplemented methods.
- * 
  * @param <U>
  *            specific {@link User} type
  */
@@ -50,15 +48,15 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
 	public static final Sport BIKE;
 
     /*
-     * TODO: initialize properly these sports
+     * Initialize properly these sports
      */
 	static {
-		SOCCER = null;
-		F1 = null;
-		MOTOGP = null;
-		VOLLEY = null;
-		BASKET = null;
-		BIKE = null;
+		SOCCER = new Sport("SOCCER");
+		F1 = new Sport("F1");
+		MOTOGP = new Sport("MOTOGP");
+		VOLLEY = new Sport("VOLLEY");
+		BASKET = new Sport("BASKET");
+		BIKE = new Sport("BIKE");
 	}
 
 	/**
@@ -99,12 +97,6 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
 		this.sports = new HashSet<>();
 	}
 
-    /*
-     * [METHODS]
-     * 
-     * Implements all the methods below
-     */
-
 	/**
 	 * Add a new sport followed by this user: if the user already likes or does
 	 * the sport, nothing happens.
@@ -112,9 +104,8 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
 	 * @param sport
 	 *            a sport followed/done by the user
 	 */
-    // TODO
 	public void addSport(final Sport sport) {
-
+		sports.add(sport);
 	}
 
 	/**
@@ -124,9 +115,8 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
 	 *            sport to use as an input
 	 * @return true if a user likes sport s
 	 */
-    // TODO
 	public boolean hasSport(final Sport s) {
-		return false;
+		return sports.contains(s);
 	}
 
     /*
