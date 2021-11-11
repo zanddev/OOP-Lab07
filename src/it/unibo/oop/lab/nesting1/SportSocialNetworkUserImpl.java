@@ -24,80 +24,80 @@ import it.unibo.oop.lab.socialnetwork.User;
  */
 public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUserImpl<U> {
 
-    /**
-     * Static {@link Sport} constant.
-     */
-    public static final Sport SOCCER;
-    /**
-     * Static {@link Sport} constant.
-     */
-    public static final Sport F1;
-    /**
-     * Static {@link Sport} constant.
-     */
-    public static final Sport MOTOGP;
-    /**
-     * Static {@link Sport} constant.
-     */
-    public static final Sport VOLLEY;
-    /**
-     * Static {@link Sport} constant.
-     */
-    public static final Sport BASKET;
-    /**
-     * Static {@link Sport} constant.
-     */
-    public static final Sport BIKE;
+	/**
+	 * Static {@link Sport} constant.
+	 */
+	public static final Sport SOCCER;
+	/**
+	 * Static {@link Sport} constant.
+	 */
+	public static final Sport F1;
+	/**
+	 * Static {@link Sport} constant.
+	 */
+	public static final Sport MOTOGP;
+	/**
+	 * Static {@link Sport} constant.
+	 */
+	public static final Sport VOLLEY;
+	/**
+	 * Static {@link Sport} constant.
+	 */
+	public static final Sport BASKET;
+	/**
+	 * Static {@link Sport} constant.
+	 */
+	public static final Sport BIKE;
 
     /*
      * TODO: initialize properly these sports
      */
-    static {
-        SOCCER = null;
-        F1 = null;
-        MOTOGP = null;
-        VOLLEY = null;
-        BASKET = null;
-        BIKE = null;
-    }
+	static {
+		SOCCER = null;
+		F1 = null;
+		MOTOGP = null;
+		VOLLEY = null;
+		BASKET = null;
+		BIKE = null;
+	}
 
-    /**
-     * Field meant to keep track of the set of sports followed/done by a user.
-     */
-    private final Set<Sport> sports;
+	/**
+	 * Field meant to keep track of the set of sports followed/done by a user.
+	 */
+	private final Set<Sport> sports;
 
-    /**
-     * Builds a new {@link SportSocialNetworkUserImpl}.
-     * 
-     * @param name
-     *            the user firstname
-     * @param surname
-     *            the user lastname
-     * @param user
-     *            alias of the user, i.e. the way a user is identified on an
-     *            application
-     */
-    public SportSocialNetworkUserImpl(final String name, final String surname, final String user) {
-        this(name, surname, user, -1);
-    }
+	/**
+	 * Builds a new {@link SportSocialNetworkUserImpl}.
+	 * 
+	 * @param name
+	 *            the user firstname
+	 * @param surname
+	 *            the user lastname
+	 * @param user
+	 *            alias of the user, i.e. the way a user is identified on an
+	 *            application
+	 */
+	public SportSocialNetworkUserImpl(final String name, final String surname, final String user) {
+		this(name, surname, user, -1);
+	}
 
-    /**
-     * Builds a new {@link SportSocialNetworkUserImpl}.
-     * 
-     * @param name
-     *            the user firstname
-     * @param surname
-     *            the user lastname
-     * @param userAge
-     *            user's age
-     * @param user
-     *            alias of the user, i.e. the way a user is identified on an
-     *            application
-     */
-    public SportSocialNetworkUserImpl(final String name, final String surname, final String user, final int userAge) {
-        super(name, surname, user, userAge);
-        this.sports = new HashSet<>();
-    }
+	/**
+	 * Builds a new {@link SportSocialNetworkUserImpl}.
+	 * 
+	 * @param name
+	 *            the user firstname
+	 * @param surname
+	 *            the user lastname
+	 * @param userAge
+	 *            user's age
+	 * @param user
+	 *            alias of the user, i.e. the way a user is identified on an
+	 *            application
+	 */
+	public SportSocialNetworkUserImpl(final String name, final String surname, final String user, final int userAge) {
+		super(name, surname, user, userAge);
+		this.sports = new HashSet<>();
+	}
 
     /*
      * [METHODS]
@@ -105,29 +105,29 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
      * Implements all the methods below
      */
 
-    /**
-     * Add a new sport followed by this user: if the user already likes or does
-     * the sport, nothing happens.
-     * 
-     * @param sport
-     *            a sport followed/done by the user
-     */
+	/**
+	 * Add a new sport followed by this user: if the user already likes or does
+	 * the sport, nothing happens.
+	 * 
+	 * @param sport
+	 *            a sport followed/done by the user
+	 */
     // TODO
-    public void addSport(final Sport sport) {
+	public void addSport(final Sport sport) {
 
-    }
+	}
 
-    /**
-     * Returns true if a user likes/does a given sport.
-     * 
-     * @param s
-     *            sport to use as an input
-     * @return true if a user likes sport s
-     */
+	/**
+	 * Returns true if a user likes/does a given sport.
+	 * 
+	 * @param s
+	 *            sport to use as an input
+	 * @return true if a user likes sport s
+	 */
     // TODO
-    public boolean hasSport(final Sport s) {
-        return false;
-    }
+	public boolean hasSport(final Sport s) {
+		return false;
+	}
 
     /*
      * TODO
@@ -135,16 +135,16 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
      * Complete the definition of this static inner class defining a Sport along
      * with its bare name.
      */
-    public static final class Sport {
-        /*
-         * TODO
-         * 
-         * Redefine equals so that two sports are equal only if they feature the
-         * very same name. Remember that you must also redefine hashCode()!
-         */
-        @Override
-        public boolean equals(final Object o) {
-            return false;
-        }
-    }
+	public static final class Sport {
+	    /*
+	     * TODO
+	     * 
+	     * Redefine equals so that two sports are equal only if they feature the
+	     * very same name. Remember that you must also redefine hashCode()!
+	     */
+		@Override
+		public boolean equals(final Object o) {
+			return false;
+		}
+	}
 }
