@@ -17,31 +17,33 @@ package it.unibo.oop.lab.enum2;
  */
 public enum Sport {
 
-	BASKET,
-	VOLLEY,
-	TENNIS,
-	BIKE,
-	F1,
-	MOTOGP,
-	SOCCER;
+	/*
+	 * Define sports
+	 */
+	BASKET(Place.INDOOR, 5, "basket"),
+	VOLLEY(Place.INDOOR, 6, "volley"),
+	TENNIS(Place.OUTDOOR, 2, "tennis"),
+	BIKE(Place.OUTDOOR, "bike"),
+	F1(Place.OUTDOOR, 20, "F1"),
+	MOTOGP(Place.OUTDOOR, 20, "motoGP"),
+	SOCCER(Place.OUTDOOR, 11, "soccer");
 
-    /*
-     * TODO
-     * 
-     * [FIELDS]
-     * 
-     * Declare required fields
-     */
+	/*
+	 * Declare required fields
+	 */
+	private final int noTeamMembers;
+	private final String actualName;
+	private final Place place;
 
-    /*
-     * TODO
-     * 
-     * [CONSTRUCTOR]
-     * 
-     * Define a constructor like this:
-     * 
-     * - Sport(final Place place, final int noTeamMembers, final String actualName)
-     */
+	Sport(final Place place, final String actualName) {
+		this(place, 1, actualName);
+	}
+	
+	Sport(final Place place, final int noTeamMembers, final String actualName) {
+		this.place = place;
+		this.noTeamMembers = noTeamMembers;
+		this.actualName = actualName;
+	}
 
     /*
      * TODO
