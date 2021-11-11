@@ -4,7 +4,7 @@ import it.unibo.oop.lab.socialnetwork.User;
 
 /**
  * This is going to act as a test for
- * {@link it.unibo.oop.lab.enum1.Sport}
+ * {@link it.unibo.oop.lab.enum1.SportSocialNetworkUserImpl}
  * 
  * running it every test must return true.
  * 
