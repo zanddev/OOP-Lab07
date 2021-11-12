@@ -110,9 +110,15 @@ public class Sport2SocialNetworkUserImpl<U extends User> extends SocialNetworkUs
 	 * @param p the place in which the sport is practised in order to be
 	 * included in the resulting set
 	 * 
-	 * @return the set of sport practiced in a given place
+	 * @return the set of sport practised in a given place
 	 */
-    /*
-     * public Set<Sport> getSportPracticedInPlace(Place p) { return null; }
-     */
+	public Set<Sport> getSportPracticedInPlace(Place p) {
+		Set<Sport> sportsInPlace = new HashSet<>();
+		for(Sport interestedSport : sports) {
+			if(interestedSport.getPlace().equals(p)) {
+				sportsInPlace.add(interestedSport);
+			}
+		}
+		return sportsInPlace;
+	}
 }
