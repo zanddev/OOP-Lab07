@@ -89,23 +89,25 @@ public class Sport2SocialNetworkUserImpl<U extends User> extends SocialNetworkUs
 		return this.sports.contains(s);
 	}
 
-    /*
-     * [METHODS] NEW METHODS TO IMPLEMENT FROM SCRATCH
-     */
-
 	/**
-	 * Returns the set of individual sports followed/practiced by this user: a
+	 * Returns the set of individual sports followed/practised by this user: a
 	 * sport is individual if the number of team member is = 1.
 	 * 
 	 * @return the set of individual sport this user practices/follows
 	 */
-    /*
-     * public Set<Sport> getIndividualSports() { return null; }
-     * 
-     */
-	/** Returns the set of sports which are practiced in a given place.
+	public Set<Sport> getIndividualSports() {
+		Set<Sport> individualInterestedSports = new HashSet<>();
+		for(Sport interestedSport : sports) {
+			if(interestedSport.isIndividualSport()) {
+				individualInterestedSports.add(interestedSport);
+			}
+		}
+		return individualInterestedSports;
+	}
+
+	/** Returns the set of sports which are practised in a given place.
 	 * 
-	 * @param p the place in which the sport is practiced in order to be
+	 * @param p the place in which the sport is practised in order to be
 	 * included in the resulting set
 	 * 
 	 * @return the set of sport practiced in a given place
